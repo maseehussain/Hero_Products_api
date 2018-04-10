@@ -12,6 +12,9 @@ mongoose.connection.once('open', () => {
   const productData = [{
     product: 'Epson Perfection V550 Photo Scanner with ReadyScan LED Technology',
     price: '£179'
+  }, {
+    product: 'Canon CanoScan 9000F Mark II Colour Scanner',
+    price: '£169'
   }];
 
   Product
