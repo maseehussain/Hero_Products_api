@@ -26,15 +26,15 @@ mongoose
       {
         product: 'Canon CanoScan 9000F Mark II Colour Scanner',
         price: '£159',
-        merchant: merchants[1]
+        merchant: merchants[0]
       }, {
         product: 'Epson Perfection V550 Photo Scanner with ReadyScan LED Technology',
         price: '£179',
-        merchant: merchants[2]
+        merchant: merchants[1]
       }, {
         product: 'Nintendo Switch Console (Neon) with Mario & Rabbids Kingdom Battley',
         price: '299',
-        merchant: merchants[3]
+        merchant: merchants[2]
       },
     ])
   })
