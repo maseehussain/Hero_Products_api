@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const companySchema = new mongoose.Schema({
-  merchant: { type: String, required: true }
+const merchantSchema = new mongoose.Schema({
+  company: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Company', companySchema);
+module.exports = mongoose.model('Merchant', merchantSchema);
