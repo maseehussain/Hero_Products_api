@@ -7,13 +7,13 @@ const Merchant = require('../models/merchant');
 
 const merchantData = [
   {
-    merchant: 'Amazon'
+    company: 'Amazon'
   },
   {
-    merchant: 'Ebay'
+    company: 'Ebay'
   },
   {
-    merchant: 'HMV'
+    company: 'HMV'
   }
 ];
 
@@ -26,15 +26,15 @@ mongoose
       {
         product: 'Canon CanoScan 9000F Mark II Colour Scanner',
         price: '£159',
-        merchant: merchants[0]
+        company: merchants[0]
       }, {
         product: 'Epson Perfection V550 Photo Scanner with ReadyScan LED Technology',
         price: '£179',
-        merchant: merchants[1]
+        company: merchants[1]
       }, {
         product: 'Nintendo Switch Console (Neon) with Mario & Rabbids Kingdom Battley',
         price: '299',
-        merchant: merchants[2]
+        company: merchants[2]
       },
     ])
   })
