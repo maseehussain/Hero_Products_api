@@ -10,8 +10,8 @@ mongoose.connection.once('open', () => {
   mongoose.connection.db.dropDatabase();
 
   const productData = [{
-    product: 'Trainers',
-    price: '£20'
+    product: 'Epson Perfection V550 Photo Scanner with ReadyScan LED Technology',
+    price: '£179'
   }];
 
   Product
