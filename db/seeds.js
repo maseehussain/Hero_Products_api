@@ -14,7 +14,7 @@ mongoose.connection.once('open', () => {
     price: '£179'
   }, {
     product: 'Canon CanoScan 9000F Mark II Colour Scanner',
-    price: '£169'
+    price: '£159'
   }];
 
   Product
