@@ -11,6 +11,7 @@ function productIndex(req, res, next) {
 function productShow(req, res, next) {
   Product
     .findById(req.params.id)
+    .populate('products')
     .exec()
     .then((product) => {
       res.json(product);

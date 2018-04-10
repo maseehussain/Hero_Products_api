@@ -1,5 +1,4 @@
 const Merchant = require('../models/merchant');
-const Product = require('../models/product');
 
 function merchantsIndex(req, res) {
   Merchant
@@ -12,6 +11,7 @@ function merchantsIndex(req, res) {
 function merchantShow(req, res, next) {
   Merchant
     .findById(req.params.id)
+    .populate('merchants')
     .exec()
     .then((merchant) => {
       res.json(merchant);
