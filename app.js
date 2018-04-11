@@ -8,7 +8,6 @@ mongoose.Promise = require('bluebird');
 mongoose.plugin(require('./lib/globalToJSON'));
 mongoose.plugin(require('mongoose-unique-validator'));
 
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const { port, dbURI, env } = require('./config/environment');
 const routes = require('./config/routes');
@@ -17,7 +16,6 @@ const errorHandler = require('./lib/errorHandler');
 
 mongoose.connect(dbURI, { useMongoClient: true });
 
-if('test' !== env) app.use(morgan('dev'));
 app.use(express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 
